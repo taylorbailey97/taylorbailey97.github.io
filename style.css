@@ -1,0 +1,154 @@
+/* Global styles
+---------------------*/
+html{
+    box-sizing: border-box;
+} *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+body {
+    color: white;
+    background: #001427;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    text-align: left;
+    
+}
+
+h1, h2{
+    font-family: 'Caveat', cursive;
+}
+
+h2{
+    font-size:  40px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+p {
+    color: white;
+}
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 60px 50px;
+    overflow: hidden;
+}
+
+a:hover {
+    color: red;
+    padding: 10px;
+    background: white;
+}
+
+h3 {
+    margin-top: 6px;
+}
+
+
+/* Header Footer
+---------------------*/
+header{
+/*    padding-top: 50px;*/
+    position: relative;
+}
+header h1, header h2{
+    margin-top: 0px;
+}
+footer a{
+    color: white;
+    padding: 0px 10px;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+footer {
+    text-align: center;
+    background: #001427;   
+}
+
+.headerinfo{
+    background: #001427;
+    
+}
+
+.photo{
+    border-radius: 50%;
+    width: 200px;
+    float: right;
+    overflow: hidden;
+}
+
+.blocking-large{
+    width: 40%;
+    float: left;
+    padding-left: 20px; 
+    overflow: hidden;
+}
+.blocking-small{
+    width: 60%;
+    float: left;
+    overflow: hidden;
+    
+}
+.btn {
+    text-decoration: none;
+    background: red;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+}
+.download {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* Work history
+---------------------*/
+.work {
+    background: #211A1E;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+.work p{
+    font-weight: bold;
+}
+
+/* Navigation
+---------------------*/
+nav {
+    text-align: center;
+    background: #004E98;
+    position: fixed;
+    padding: 0;
+    width: 100%;
+    margin: 0px 15px;
+}
+nav a {
+    display: inline-block;
+    padding: 15px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    margin: 0px 15px;
+}
+
+/* Education
+---------------------*/
+.education {
+    background: linear-gradient(rgba(137, 124, 128, 0.8), rgba(137, 124, 128, 0.5)),
+                 url(../Sources/city.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+/* 
+---------------------*/
