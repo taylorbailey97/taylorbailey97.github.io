@@ -1,0 +1,21 @@
+/* Body text
+*********************/
+body {
+    background: yellow;
+}
+
+h2 {
+    background: blue;
+}
+
+
+/* Header 
+********************/
+header {
+    background: #5B618A;
+}
+
+nav:hover {
+    background: white;
+    color: red;
+}
