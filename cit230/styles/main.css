@@ -24,6 +24,14 @@ ul {
     overflow: hidden;
 }
 
+.photoassignments{
+    border-radius: 50%;
+    width: 100px;
+    height: 90px;
+    float: right;
+    overflow: hidden;
+}
+
 .photobasicpage{
     border-radius: 20px;
     width: 170px;
@@ -66,7 +74,7 @@ h2 {
 
 .assignments {
     background-size: cover;
-    background: linear-gradient(rgba(137, 124, 128, 1), rgba(137, 124, 128, .7)), 
+    background: linear-gradient(rgba(137, 124, 128, .5), rgba(137, 124, 128, .7)), 
                  url(../images/book.jpg) no-repeat fixed;
 }
 
