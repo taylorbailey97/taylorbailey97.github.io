@@ -67,7 +67,7 @@ h2 {
 .assignments {
     background-size: cover;
     background: linear-gradient(rgba(137, 124, 128, 1), rgba(137, 124, 128, .7)), 
-                 url(../images/homework2.jpg) no-repeat fixed;
+                 url(../images/book.jpg) no-repeat fixed;
 }
 
 .assignments a {
@@ -126,7 +126,7 @@ header h1, header h2{
 /* Education
 *******************/
 .education {
-    background: #4D5057;
+    /*background: #4D5057;*/
     background-size: cover;  
     background: linear-gradient(rgba(137, 124, 128, 0.7), rgba(137, 124, 128, 1)), 
                  url(../images/education.jpg) no-repeat fixed;
