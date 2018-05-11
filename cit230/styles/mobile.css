@@ -1,0 +1,101 @@
+html{
+    box-sizing: border-box;
+} *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Global styles
+*************************/
+body, header, nav {
+    max-width: 400px;
+}
+
+.photo {
+    border-radius: 50%;
+    position: inherit;
+    width: 100px;
+    height: 100px;
+}
+
+/* Header
+*************************/
+header {
+    position: relative;
+    margin: 0;
+    background: #CF5C36;
+}
+
+
+/* Body
+************************/
+body {
+    color: white;
+    background: white;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    text-align: left;
+}
+
+.education {
+    /*background: #4D5057;*/
+    background-size: cover;  
+    background: linear-gradient(rgba(137, 124, 128, 0.7), rgba(137, 124, 128, 1)), 
+                 url(../images/education.jpg) no-repeat fixed;
+}
+
+.work {
+    background: #153243;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.border {
+    border-bottom: 2px solid rgba(155, 155, 155, 0.1);
+}
+
+
+/* Footer
+************************/
+footer {
+    color: white;
+    text-align: center;
+    background: #065A82;
+    margin: 0px;
+    padding: 20px;
+    position: inherit;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    display: inline-block;
+    color: white;
+    font-size: 15px;
+}
+
+footer ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+
+/* Navigation
+************************/
+nav {
+    background: #004E98;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+nav a {
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}

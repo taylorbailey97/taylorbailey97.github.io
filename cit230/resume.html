@@ -5,19 +5,21 @@
     <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taylor Bailey | Resume</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" media="screen and (min-width: 601px)" href="styles/main.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="styles/mobile.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="basicpage.html">Home</a> 
-            <a href="assignments.html">School page</a>
+            <a href="basicpage.html" class="border">Home</a> 
+            <a href="assignments.html" class="border">School page</a>
             <a href="resume.html">Resume</a>
         </nav>
       <div class="content-wrap">
         <section>
-    <img src="images/My%20photo.jpg" alt="Taylor Bailey" class="photo blocking-small">
+    <img src="images/My%20photo.jpg" alt="Taylor Bailey" class="photo">
            <h1>Taylor Bailey</h1>
            <h2>Software engineering</h2>
            <p><b><u>Career focus:</u></b>Current college student with experience in Object-Oriented, and Web Development languages. Self-motivated    learner, willing and able to learn new systems and adapt with changing corporate environments. </p>
@@ -33,7 +35,7 @@
                  <p>TacoTimeNW</p>
               </div>  
 
-              <div class="blocking-small">
+              <div class="blocking-small border">
                  <p>Trainer: Kent, Washington</p>
                 <ul>
                   <li>Worked as a team to fulfill customers orders with quality in mind</li>
@@ -44,7 +46,7 @@
               <div class="blocking-large">
                   <p>Amazon.com</p>
               </div>      
-              <div class="blocking-small">
+              <div class="blocking-small border">
                   <p>Fulfillment Associate: Kent, Washington</p>
                   <ul>
                       <li>Worked inside Amazon’s warehouse on a team unloading trucks with forklifts to supply floors with product.</li>
@@ -71,8 +73,8 @@
               <h2>Education</h2>
               <h3 class="blocking-small">Brigham Young University, 2018-2020</h3>
              <div class="blocking-small">    
-                 <p>Major: Software Engineering </p>
-                 <p>Languages:</p>
+                 <p><b>Major:</b> Software Engineering </p>
+                 <p><b>Languages:</b></p>
                  <ul>
                      <li>C++</li>
                      <li>JavaScript</li>
@@ -90,9 +92,21 @@
           </section>
     <footer>
         <h2>Let's keep in touch</h2>
-        <a href="taylor-bailey@live.com" target="_blank">Taylor-bailey@live.com</a>
-        <a href="https://www.facebook.com/profile.php?id=100009128855680" target="_blank">Facebook</a>
-        <a href="https://twitter.com/Taylorbailey525" target="_blank">Twitter</a>
+        <ul>
+          <li>
+            
+           <i class="fas fa-envelope"></i>
+           <a href="taylor-bailey@live.com" target="_blank">Taylor-bailey@live.com</a>
+            </li>
+           <li>
+              <i class="fab fa-facebook"></i>
+              <a href="https://www.facebook.com/profile.php?id=100009128855680" target="_blank">Facebook</a>
+            </li>
+            <li>
+              <i class="fab fa-twitter-square"></i>
+              <a href="https://twitter.com/Taylorbailey525" target="_blank">Twitter</a>
+            </li>
+        </ul>
         <p>&copy;Taylor Bailey 2018</p>
     </footer>
 </body>
