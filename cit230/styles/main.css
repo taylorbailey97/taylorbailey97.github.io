@@ -1,99 +1,39 @@
-/* Global styles
-*********************/
-html{
-    box-sizing: border-box;
-} *, *:before, *:after {
-    box-sizing: inherit;
-}
+/* CIT 230 - Assignment Portal CSS Template */
+/* You may use #HEX or color names */
 
-header a:hover, footer a:hover {
-    color: red;
-    padding: 10px;
-    background: white;
-}
-
-ul {
-    list-style-type: none;
-}
-
-.photo{
-    border-radius: 50%;
-    width: 190px;
-    height: 170px;
-    float: right;
-    overflow: hidden;
-}
-
-.photoassignments{
-    border-radius: 50%;
-    width: 100px;
-    height: 90px;
-    float: right;
-    overflow: hidden;
-}
-
-.photobasicpage{
-    border-radius: 20px;
-    width: 170px;
-    height: 170px;
-    float: right;
-    overflow: hidden;
-}
-
-/* Body text
-*********************/
-body {
-    color: white;
-    background: white;
-    text-align: left;
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    text-align: left;
-}
-
-a:hover {
-    background: #004E98;
+/* * is a wildcard referring to all elements. */
+* { margin: 0; box-sizing: border-box; } 
+/* Global
+********************/
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family:  Ubuntu, sans-serif ;
+    color: black;
 }
 
 h1 {
-    display: block;
-    margin: 0 auto;
-    font-size: 60px;
-}
-
-h1, h2 {
-    font-family: 'Caveat', cursive;
-    margin: 0;
+    font-size: 2.5em;
+    color: black;
+    padding-bottom: 10px;
 }
 
 h2 {
-    font-size:  40px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-}
-
-.assignments {
-    background-size: cover;
-    background: linear-gradient(rgba(137, 124, 128, .5), rgba(137, 124, 128, .7)), 
-                 url(../images/book.jpg) no-repeat fixed;
-}
-
-.assignments a {
-    color: white;
-
+    color: black;
+    font-size: 1.7em;
+    text-align: center;
+    border-bottom: 4px solid #001021;
 }
 
 .content-wrap {
+    margin: 50px auto;
     max-width: 950px;
-    margin: 0 auto;
-    padding: 60px 50px;
     overflow: hidden;
 }
 
 .blocking-large{
     width: 40%;
-    float: left;
-    padding-left: 20px; 
+    float: left; 
     overflow: hidden;
 }
 
@@ -102,83 +42,69 @@ h2 {
     float: left;
     overflow: hidden;
 }
-
-/* Header 
-********************/
-header {
-    background: #CF5C36;
-    position: relative;
-    margin: 0;
-}
-
-header h1, header h2{
-    margin: 0;
-}
-
-
-/* Work
+/* Header & Footer
 *******************/
-.work {
-    background: #153243;
-    margin: 0 auto;
-    overflow: hidden;
-    
-}
-.work p{
-    font-weight: bold;
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 950px;
+    background: #FEB95F;
 }
 
-
-
-
-/* Education
-*******************/
-.education {
-    /*background: #4D5057;*/
-    background-size: cover;  
-    background: linear-gradient(rgba(137, 124, 128, 0.7), rgba(137, 124, 128, 1)), 
-                 url(../images/education.jpg) no-repeat fixed;
-}
-
-
-
-
-/* Footer
-******************/
-footer {
-    color: white;
+header, footer, footer a {
     text-align: center;
-    background: #065A82;
-    margin: 0px;
-    padding: 20px;
-    position: inherit;
+    color: black;
 }
 
+header img {
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+    float: right;
+    overflow: hidden;
+}
+
+footer {
+    font-size: 10px;
+}
+
+<<<<<<< HEAD
 footer a {
     padding: 20px;
     color: white;
     font-size: 15px;
 }
+=======
+>>>>>>> 0f673f4eb9d143982661ae5d3a06fc7302b275f4
 
 /* Navigation
-********************/
+*******************/
+
 nav {
-    text-align: center;
-    background: #004E98;
+    background: #001021;
     position: fixed;
     right: 0;
     left: 0;
     top: 0;
-    padding: 0;
-    width: 100%;
-    margin-top: 0;
+    text-align: center;
 }
+
 nav a {
-    display: inline-block;
-    padding: 15px 20px;
     text-decoration: none;
+<<<<<<< HEAD
     text-transform: uppercase;
     font-weight: bold;
     color: white;
 }
 
+=======
+    display: inline-block;
+    padding: 0px 14%;
+    color: white
+}
+
+nav a:hover {
+    background: white;
+    color: red;
+}
+>>>>>>> 0f673f4eb9d143982661ae5d3a06fc7302b275f4
