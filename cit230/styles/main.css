@@ -66,16 +66,22 @@ header img {
 
 footer {
     font-size: 10px;
+    text-align: center;
 }
 
-<<<<<<< HEAD
-footer a {
-    padding: 20px;
-    color: white;
-    font-size: 15px;
+footer ul {
+   list-style: none;
 }
-=======
->>>>>>> 0f673f4eb9d143982661ae5d3a06fc7302b275f4
+
+footer a {
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    text-decoration: none;
+    padding-right: 25px;
+    
+}
+
 
 /* Navigation
 *******************/
@@ -91,20 +97,14 @@ nav {
 
 nav a {
     text-decoration: none;
-<<<<<<< HEAD
     text-transform: uppercase;
     font-weight: bold;
     color: white;
-}
-
-=======
     display: inline-block;
     padding: 0px 14%;
-    color: white
 }
 
 nav a:hover {
     background: white;
     color: red;
 }
->>>>>>> 0f673f4eb9d143982661ae5d3a06fc7302b275f4
