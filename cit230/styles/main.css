@@ -9,17 +9,17 @@ body {
     font-size: 16px; 
     line-height: 32px;
     font-family:  Ubuntu, sans-serif ;
-    color: black;
+    background: #2B2D42; 
+    color: white;
 }
 
 h1 {
     font-size: 2.5em;
-    color: black;
+/*    color: white;*/
     padding-bottom: 10px;
 }
 
 h2 {
-    color: black;
     font-size: 1.7em;
     text-align: center;
     border-bottom: 4px solid #001021;
@@ -47,13 +47,13 @@ h2 {
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: 950px;
+    /*max-width: 950px;*/
     background: #FEB95F;
 }
 
 header, footer, footer a {
     text-align: center;
-    color: black;
+    /*color: black;*/
 }
 
 header img {
@@ -67,6 +67,8 @@ header img {
 footer {
     font-size: 10px;
     text-align: center;
+    bottom: 0;
+    margin-bottom: 0;
 }
 
 footer ul {
@@ -99,9 +101,10 @@ nav a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
+    max-width: 950px;
     color: white;
     display: inline-block;
-    padding: 0px 14%;
+    padding: 0px 10%;
 }
 
 nav a:hover {
