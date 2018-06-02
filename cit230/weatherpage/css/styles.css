@@ -11,6 +11,7 @@ html {
 header {
     background: #30536B;
     font-family: 'Anton', sans-serif;
+    text-align: center;
     color: white;
     position: static;
     top: 0;
@@ -49,19 +50,26 @@ nav a:hover {
 
 body {
     margin: 0;
-    background: #F6F4F3;
+    background: /*linear-gradient(rgba(128, 206, 215, .5) rgba(128, 206, 215, 1)),*/
+                 url(../images/city.jpg) no-repeat fixed;
+    background-size: cover;
 }
 
 /*body main {
     max-width: 950px;
 }*/
 
+main {
+    background:  #FFFAE2;
+    margin-top: 0;
+}
+
 h1 {
     margin: 0;
 }
 
 h2 {
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 .photo {
@@ -69,8 +77,21 @@ h2 {
     height: 50px;
 }
 
+/* Footer
+************************/
+footer {
+    background: #DE9E36;
+    padding: 5px;
+    text-align: center;
+}
+
+
 /* Classes
 ************************/
+.content-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+}
 
 .subheading p{
     margin: 0 50px;
