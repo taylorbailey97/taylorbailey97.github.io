@@ -1,81 +1,75 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
 
-
-* { box-sizing: border-box;}
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
   font-size: 16px;
-  font-family: arial;
+  font-family: ubuntu, sans-serif;
 }
 
-header, nav, main, footer { 
-  max-width: 400px; 
-  text-align: center;
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  max-width: 90%;
+  margin: 0 auto;
+    /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
-/*Header
-************************/
-header {}
-header h1 {}
+header {
+    background: #28536b;
+    margin: 0 auto;
+}
+header h1 {
+    margin: 0 auto;
+    color: white;
+}
 header img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
 }
 header .subheading {}
 
+button {
+    float: right;
+}
 
-/*Navigation
-************************/
 nav {}
 nav button {}
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+    background: #FFE66D;
+    padding: 20px;
+    margin: 0 auto;
     text-align: center;
 }
 nav ul li {
-    display: inline-block;
+    list-style: none;
+    padding: 5px;
 }
 nav ul li a {
     text-decoration: none;
-    display: inline-block;
-    padding: 15px;
-    margin:  0px;
+    color: black;
 }
 nav ul li.active a {}
 nav ul li a:hover {
-    background-color: #4CAF50;
+    color: white;
+    background: #1B3B6F;
 }
 
-/*Main
-************************/
 main {}
 main h2 {}
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-main img {
-    max-width: 200px;
-    max-height: 200px;
+main figure { 
+    margin: 0 0 .2rem 2%; width:96%; 
 }
-main figure img {
-    /*width: 400px;
-    height: 400px;*/
+main figure img {}
+
+.current img {
+    width: 25px;
 }
+
+main article img {
+    width: 200px;
+}
+
+footer {}
+
 .forecast {
     display: none;
 }
-
-.town-article img {
-    display: inline-block;
-}
-
-.town-article h4, .town-article p {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0;
-}
-
-/*Footer
-************************/
-footer {}

@@ -3,14 +3,19 @@
     /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
     
     nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+    nav ul {}
+    
+    nav li {
+        display: inline-block;
+        margin: 0 auto;
+    }
+    
+    nav li a {
+        padding: 10px;
+    }
     
     section.forecast {
-        display: inline-grid;
-    }  /* show the 10-day forecast with the medium view and up */
-    
-    header, nav, main, footer { 
-        max-width: 1000px; 
-    }
-
+        display: contents;
+    }  
 
   }
