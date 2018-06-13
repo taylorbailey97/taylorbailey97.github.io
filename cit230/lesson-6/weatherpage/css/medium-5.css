@@ -9,8 +9,19 @@
     }  /* show the 10-day forecast with the medium view and up */
     
     header, nav, main, footer { 
-        max-width: 1000px; 
+        max-width: 1200px; 
     }
-
+    
+    main {
+        text-align: left;
+    }
+    
+    .icon {
+        display: none;
+    }
+    
+    #btn, #btn li {
+        display: inline-block;
+    }
 
   }
