@@ -1,0 +1,36 @@
+table {
+    border-collapse: collapse;
+    box-shadow: 10px 10px 20px #7197ae;
+}
+
+tr, th, td{
+    border: 1px solid black;
+    padding: 25px;
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background: #e7ffed;
+}
+
+tr:nth-child(even) {
+    background: #e7f0ed;
+}
+
+tr:nth-child(1) {
+    background:  #7fb9c2;
+}
+
+tbody tr:nth-child(1) {
+    background:  #628ca6;
+    color: white;
+}
+
+thead td {
+    text-align: center;
+}
+
+#oddOut {
+    background: #628ca6;
+    color: white;
+}
