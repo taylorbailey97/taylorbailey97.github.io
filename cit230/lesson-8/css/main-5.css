@@ -1,0 +1,154 @@
+
+
+* { box-sizing: border-box;}
+
+body {
+  font-size: 16px;
+  font-family: arial;
+}
+
+header, nav, main, footer { 
+  max-width: 600px; 
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*Header
+************************/
+header {
+    background: #28536B;
+    color: white;
+}
+header h1 {}
+header img {
+    width: 40px;
+    height: 40px;
+}
+header .subheading {}
+
+button {}
+/*Navigation
+************************/
+nav {
+    background: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+}
+nav ul li {
+    display: block;
+}
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    color: white;
+}
+nav ul li.active a {}
+nav ul li a:hover {
+    background: darkgreen;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    display: none;
+}
+
+.responsive {
+    display: block;
+}
+
+/*Main
+************************/
+main {}
+main h2 {}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main img {}
+main figure img {}
+.forecast {
+    display: none;
+}
+
+.town-article img {
+    display: inline-block;
+}
+
+.town-article h4, .town-article p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+
+/* Form
+************************/
+main form {
+    border: 4px solid black;
+    border-top: 0;
+    max-width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #FEFEFA;
+}
+
+form div {
+    padding: 10px;
+    margin: 2px;
+}
+
+
+.submit {
+    background: green;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    float: right;
+}
+
+/*Footer
+************************/
+footer {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

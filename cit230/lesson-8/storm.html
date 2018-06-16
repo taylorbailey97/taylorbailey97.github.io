@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="weather">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Storm Center</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main-5.css">
+        <link rel="stylesheet" href="css/medium-5.css">
+        <link rel="stylesheet" href="css/large-5.css">
+        <link href="dist/hamburgers.css" rel="stylesheet">
+    </head>
+    <body>
+      <header>
+      <h2><img src="images/logo.png" alt="logo">Day Out Weather | Storm Center</h2>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <button>&#9776</button>
+          </a>
+      <nav>
+       <div>
+        <ul id="btn" class="topnav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+        </div>		
+      </nav>
+      </header>
+        <main>
+           <form action="thankyoupage.html" method="get">
+           <div>
+                <label for="fullname">Full name: </label>
+                <input type="text" name="fullname" required pattern="[A-za-z]{5, 1000}" title="minimum of 5 characters" placeholder="John smith">   
+           </div>
+           <div>
+               <label for="email">Email: </label>
+               <input type="email" name="email" placeholder="name@domain.com">
+           </div>
+           <div>
+               <label for="phone">Phone Number: </label>
+               <input type="tel" name="phone" required>
+           </div>
+            <div>
+                <label for="zip">Zip Code: </label>
+                <input type="text" name="zip" required pattern="[0-9]{5,5}">
+            </div>
+            <div>
+                <label for="stormdate">Storm Date: </label>
+                <input type="date" name="stormdate">
+            </div>
+            <div>
+                <label for="stormtype">Storm Type: </label>
+                <select type="typelist">
+                <!--<datalist id="typelist">-->
+                    <option value="0">Select Storm type</option>
+                    <option value="1">Flash Flood</option>
+                    <option value="2">Hail</option>
+                    <option value="3">Hurricane</option>
+                    <option value="4">Thunderstorm</option>
+                    <option value="5">Tornado</option>
+                <!--</datalist>-->
+                </select>
+            </div>
+            <div>
+                <label for="severity">Storm Severity: </label>
+                <input type="range" value="5" min="1" max="10" step="1" name="severity" oninput="rating(this.value)" onchange="rating(this.value)">
+            </div>
+            <div>
+                <label for="area">Storm Region: </label>
+                <select type="region">
+                    <option value="0">Select a region</option>
+                    <option value="1">Franklin</option>
+                    <option value="2">Springville</option>
+                    <option value="3">Greenville</option>
+                </select>
+            </div>
+            <div>
+                <label for="danger">Are you in danger?<br></label>
+                <input type="radio" name="danger" checked>Yes<br>
+                <input type="radio" name="danger">No<br>
+                <input type="radio" name="danger">Maybe<br>
+            </div>
+                <input type="submit" value="Submit" class="submit">
+            </form>
+        </main>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
