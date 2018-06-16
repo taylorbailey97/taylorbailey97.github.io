@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="description" content="weather">
@@ -9,14 +9,12 @@
         <link rel="stylesheet" href="css/main-5.css">
         <link rel="stylesheet" href="css/medium-5.css">
         <link rel="stylesheet" href="css/large-5.css">
-        <link href="dist/hamburgers.css" rel="stylesheet">
+        <!--<link href="dist/hamburgers.css" rel="stylesheet">-->
     </head>
     <body>
       <header>
       <h2><img src="images/logo.png" alt="logo">Day Out Weather | Storm Center</h2>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <button>&#9776</button>
-          </a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
       <nav>
        <div>
         <ul id="btn" class="topnav">
@@ -34,27 +32,27 @@
            <form action="thankyoupage.html" method="get">
            <div>
                 <label for="fullname">Full name: </label>
-                <input type="text" name="fullname" required pattern="[A-za-z]{5, 1000}" title="minimum of 5 characters" placeholder="John smith">   
+                <input type="text" id="fullname" name="fullname" required pattern="[A-za-z]{5,1000}" title="minimum of 5 characters" placeholder="John smith">   
            </div>
            <div>
                <label for="email">Email: </label>
-               <input type="email" name="email" placeholder="name@domain.com">
+               <input type="email" id="email" name="email" placeholder="name@domain.com">
            </div>
            <div>
                <label for="phone">Phone Number: </label>
-               <input type="tel" name="phone" required>
+               <input type="tel" id="phone" name="phone" required>
            </div>
             <div>
                 <label for="zip">Zip Code: </label>
-                <input type="text" name="zip" required pattern="[0-9]{5,5}">
+                <input type="text" id="zip" name="zip" required pattern="[0-9]{5,5}">
             </div>
             <div>
                 <label for="stormdate">Storm Date: </label>
-                <input type="date" name="stormdate">
+                <input type="date" id="stormdate" name="stormdate">
             </div>
             <div>
                 <label for="stormtype">Storm Type: </label>
-                <select type="typelist">
+                <select id="stormtype">
                 <!--<datalist id="typelist">-->
                     <option value="0">Select Storm type</option>
                     <option value="1">Flash Flood</option>
@@ -67,11 +65,11 @@
             </div>
             <div>
                 <label for="severity">Storm Severity: </label>
-                <input type="range" value="5" min="1" max="10" step="1" name="severity" oninput="rating(this.value)" onchange="rating(this.value)">
+                <input type="range" id="severity" value="5" min="1" max="10" step="1" name="severity" oninput="rating(this.value)" onchange="rating(this.value)">
             </div>
             <div>
                 <label for="area">Storm Region: </label>
-                <select type="region">
+                <select id="area">
                     <option value="0">Select a region</option>
                     <option value="1">Franklin</option>
                     <option value="2">Springville</option>
@@ -79,7 +77,7 @@
                 </select>
             </div>
             <div>
-                <label for="danger">Are you in danger?<br></label>
+                Are you in danger?<br>
                 <input type="radio" name="danger" checked>Yes<br>
                 <input type="radio" name="danger">No<br>
                 <input type="radio" name="danger">Maybe<br>
