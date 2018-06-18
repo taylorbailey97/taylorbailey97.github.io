@@ -1,0 +1,120 @@
+* { box-sizing: border-box;}
+
+body {
+  font-size: 16px;
+  font-family: arial;
+  background-image: url("images/background.jpg");
+}
+
+header, nav, main, footer { 
+  max-width: 600px; 
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*Header
+************************/
+header {
+    background: #28536B;
+}
+header h1 {}
+header img {
+    width: 40px;
+    height: 40px;
+}
+header .subheading {}
+
+button {}
+/*Navigation
+************************/
+nav {
+    background: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+}
+nav ul li {
+    /*display:;*/
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+nav ul li.active a {}
+nav ul li a:hover {
+    background: darkgreen;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navFlex-item {
+    padding: 25px;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    display: none;
+}
+
+.responsive {
+    display:;
+}
+
+/*Main
+************************/
+main {}
+main h2 {}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main img {
+/*    max-width: 200px;
+    max-height: 200px;*/
+}
+main figure {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.weather-summary {
+    text-align: center;
+    color: white;
+}
+
+.weather-summary h3 {
+    background: #087F8C;
+    padding: 10px;
+}
+
+.weather-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.forecast {
+    display: none;
+}
+
+.town-article img {
+    display:;
+}
+
+.town-article h4, .town-article p {
+    display:;
+    vertical-align: top;
+    margin: 0;
+}
+
+/*Footer
+************************/
+footer {}

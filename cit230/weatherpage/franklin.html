@@ -1,50 +1,120 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="weather">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-        <title>Franklin | weather</title>
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body>
-        <header>
-            <h1><a href="index.html"><img src="images/logo.png" alt="logo" class="photo">Day Out Weather</a></h1>
-            <div class="subheading">
-                <p>Your Vacation Weather Hotspot</p>
-            </div>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="franklin.html">Franklin</a>
-                <a href="greenville.html">Greenville</a>
-                <a href="springfield.html">Springfield</a>
-                <a href="storm.html">Storm Center</a>
-                <a href="gallery.html">Gallery</a>
-            </nav>
-        </header>
-        <main>
-            <h2>Franklin, ID</h2>
-            <section>
-                <h3>Weather Data</h3>
-            </section>
-            <section>
-                <h3>10-Day Forecast</h3>
-                <img src="images/city.jpg" alt="city image" width="400px" height="400px">
-            </section>
-            <section>
-                <h3>In the News</h3>
-                <a href="#"><div class="article">
-                      <img src="images/campfire.jpg" alt="campfire article" class="articleimage">
-                      <h4>Best Camping locations</h4>
-                      <p>Here's some of the best places to go camping!</p>
-                </div>
-                </a>
-            </section>
-        </main>
-        <footer>
-            <aside>
-                <p class="footer-bar">&copy;Taylor Bailey  |  Day Out Weather  |  <span id="currentdate">May 2018</span></p>
-            </aside>
-        </footer>
-    </body>
+<html lang="en-us">
+<head> 
+  <meta charset="utf-8">
+  <meta name="description" content="weather">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+  <title>Franklin | Weather</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main-5.css">
+  <link rel="stylesheet" href="css/medium-5.css">
+  <link rel="stylesheet" href="css/large-5.css">
+  <link href="dist/hamburgers.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+  <h2><img src="images/logo.png" alt="logo">Day Out Weather | Franklin</h2>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    	    <button>&#9776</button>
+      </a>
+  <nav>
+   <div>
+    <ul id="btn" class="topnav">
+    	<li><a href="#">Home</a></li>
+    	<li><a href="#">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="#">Storm Center</a></li>
+    	<li><a href="#">Gallery</a></li>
+    </ul>
+    </div>		
+  </nav>
+  </header>
+
+  <main>
+    <figure>
+    </figure>
+    <section class="weather-summary">
+      <h3>Weather Summary</h3>    
+      <div class="highlow">
+        <p>High: 86&deg;</p>  
+        <p>Low: 64&deg;</p>  
+      </div>
+      <figure class=".rimage">
+          <img src="images/srcsetimage.jpg"
+               srcset="images/srcsetimage400.jpg 600w,
+                       images/srcsetimage600.jpg 1024w,
+                       images/srcsetimage1000.jpg 1600w" alt="responsive photo">
+      </figure>
+      <div class="current">
+        Sunny
+        <picture>
+        </picture>
+      </div>   
+      <div class="conditions">
+        <p>Precipitation: 0%</p>  
+        <p>Wind Speed: 5 mph SW</p>  
+      </div>           
+    </section>
+        
+    <section class="forecast">
+      <h3>Ten Day Forecast</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+	</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+	</tbody>
+      </table>
+    </section>
+      
+    <article>
+      <h3>Franklin Breaks Record</h3>
+      <div class="town-article">	
+         <img src="images/cold%20weather.jpg">
+         <h4>Franklin has record low tempratures in 2017/2018 winter</h4>
+         <p>
+         </p>
+      </div>
+    </article>		  
+  
+  </main>
+    
+  <footer>
+    <section class="contact">
+      Taylor Bailey
+      206.427.0982
+      123 Main St. Anytown, US 99999
+      Google Map
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Day Out Weather | <span id="currentDate"></span>
+    </section>
+  </footer>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/hamburger.js"></script>
+</body>
 </html>
