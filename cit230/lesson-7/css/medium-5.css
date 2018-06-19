@@ -4,9 +4,48 @@
     
     nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
     
-    section.forecast {
-        display:;
+    nav ul {
+        padding: 15px;
+    }
+    
+    nav ul li {
+        margin: 0;
+    }
+    
+    .forecast {
+        display: contents;
     }  /* show the 10-day forecast with the medium view and up */
+    
+    table {
+        margin: 0 auto;
+    }
+    
+    .forecast h3 {
+        background: #087F8C;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .tableHead-flex {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .tableBody-flex {
+        display: flex;
+        justify-content: space-around;
+        justify-content: center;
+    }
+    
+    .forecast-day {
+        padding: 20px;
+        
+    }
+    
+    .forecast-deg {
+        padding: 0 25px;
+    }
+    
     
     header, nav, main, footer { 
         max-width: 1200px; 
@@ -15,6 +54,20 @@
     main {
         text-align: left;
     }
+    
+    .article-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 200px;
+    justify-content: space-around;
+    margin: 0 auto;
+    }
+    
+    .town-article {
+        border: 2.5px solid black;
+        margin: 25px;
+    }
+
     
     .icon {
         display: none;

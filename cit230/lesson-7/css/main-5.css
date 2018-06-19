@@ -3,7 +3,7 @@
 body {
   font-size: 16px;
   font-family: arial;
-  background-image: url("images/background.jpg");
+  background-image: url("taylorbailey97.github.io/cit230/lesson-7/images/background.jpg");
 }
 
 header, nav, main, footer { 
@@ -16,6 +16,7 @@ header, nav, main, footer {
 ************************/
 header {
     background: #28536B;
+    color: white;
 }
 header h1 {}
 header img {
@@ -33,14 +34,13 @@ nav {
 
 nav ul {
     list-style: none;
-    margin: 0;
     padding: 20px;
     overflow: hidden;
     background-color: #333;
-    text-align: center;
+    /*text-align: center;*/
 }
 nav ul li {
-    /*display:;*/
+    margin: 20px auto;
 }
 nav ul li a {
     text-decoration: none;
@@ -49,11 +49,6 @@ nav ul li a {
 nav ul li.active a {}
 nav ul li a:hover {
     background: darkgreen;
-}
-
-.navContainer {
-    display: flex;
-    justify-content: space-evenly;
 }
 
 .navFlex-item {
@@ -67,7 +62,11 @@ nav ul li a:hover {
 }
 
 .responsive {
-    display:;
+    display: flex;
+    max-width: 200px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /*Main
@@ -75,10 +74,7 @@ nav ul li a:hover {
 main {}
 main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
-main img {
-/*    max-width: 200px;
-    max-height: 200px;*/
-}
+main img {}
 main figure {
     display: flex;
     justify-content: center;
@@ -87,10 +83,11 @@ main figure {
 
 .weather-summary {
     text-align: center;
-    color: white;
+    color: ;
 }
 
-.weather-summary h3 {
+h3 {
+    text-align: center;
     background: #087F8C;
     padding: 10px;
 }
@@ -105,16 +102,23 @@ main figure {
     display: none;
 }
 
-.town-article img {
-    display:;
+.article-flex {
+    display: flex;
+    max-width: 400px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
 }
 
-.town-article h4, .town-article p {
-    display:;
-    vertical-align: top;
-    margin: 0;
+.town-article {
+    border: 2.5px solid black;
+    margin: 25px;
 }
 
 /*Footer
 ************************/
-footer {}
+footer {
+    background: #28536B;
+    padding: 20px;
+    color: white;
+}
