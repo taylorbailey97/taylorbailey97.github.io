@@ -1,5 +1,7 @@
 header, body, main, footer {
     max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 header {
@@ -15,6 +17,10 @@ header img {
 header a {
     text-decoration: none;
     color: white;
+}
+
+header h1 {
+    margin: 0;
 }
 
 nav ul {
