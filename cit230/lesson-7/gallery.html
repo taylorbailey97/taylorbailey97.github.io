@@ -6,30 +6,72 @@
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
         <title>Weather | Gallery</title>
         <link rel="stylesheet" href="css/gallery.css">
+        <link rel="stylesheet" href="css/gallery-m.css">
     </head>
+     
     <body>
         <header>
             <h1><a href="index.html"><img src="images/logo.png" alt="logo" class="photo">Day Out Weather</a></h1>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        	    <button>&#9776</button>
+            </a>
             <nav>
-               <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="franklin.html">Franklin</a></li>
-                <li><a href="greenville.html">Greenville</a></li>
-                <li><a href="springfield.html">Springfield</a></li>
-                <li><a href="storm.html">Storm Center</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+               <ul id="btn" class="topnav">
+                   <li><a class="navFlex-item" href="">Home</a></li>
+                   <li><a class="navFlex-item" href="#">Franklin</a></li>
+                   <li><a class="navFlex-item" href="#">Greenville</a></li>
+                   <li><a class="navFlex-item" href="#">Springfield</a></li>
+                   <li><a class="navFlex-item" href="#">Storm Center</a></li>
+                   <li><a class="navFlex-item" href="gallery.html">Gallery</a></li>
                </ul>
             </nav>
         </header>
         <main>
             <div class="container">
-               <img class="grid-item" src="images/image1.jpg" alt="1">
-               <img class="grid-item" src="images/image2.jpg" alt="2">
-               <img class="grid-item" src="images/image3.jpg" alt="3">
-               <img class="grid-item" src="images/image4.jpg" alt="4">
-               <img class="grid-item" src="images/image5.jpg" alt="5">
-               <img class="grid-item" src="images/image6.jpg" alt="6">
+               <div class="grid-item">
+               <img  src="images/image1.jpg" alt="1">
+               <h3>Beautiful Sunset</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu mi vitae massa ultrices maximus eu quis dui. Pellentesque finibus finibus cursus.</p>
+               </div>
+               <div class="grid-item">
+               <img  src="images/image2.jpg" alt="2">
+               <h3>The Rockys</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu mi vitae massa ultrices maximus eu quis dui. Pellentesque finibus finibus cursus.</p>
+               </div>
+               <div class="grid-item">
+               <img  src="images/image3.jpg" alt="3">
+               <h3>The Great Coast</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu mi vitae massa ultrices maximus eu quis dui. Pellentesque finibus finibus cursus.</p>
+               </div>
+               <div class="grid-item">
+               <img  src="images/image4.jpg" alt="4">
+               <h3>Scotland</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu mi vitae massa ultrices maximus eu quis dui. Pellentesque finibus finibus cursus.</p>
+               </div>
+               <div class="grid-item">
+               <img src="images/image5.jpg" alt="5">
+               <h3>Seal</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu mi vitae massa ultrices maximus eu quis dui. Pellentesque finibus finibus cursus.</p>
+               </div>
+               <div class="grid-item">
+               <img src="images/image6.jpg" alt="6">
+               <h3>Mist on the Water</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu mi vitae massa ultrices maximus eu quis dui. Pellentesque finibus finibus cursus.</p>
+               
+               </div>
             </div>
         </main>
+        <footer>
+            <section class="contact">
+              Taylor Bailey
+              206.427.0982
+              123 Main St. Anytown, US 99999
+              Google Map
+            </section>
+            <section class="footer-bar">&copy;2018 | All Rights Reserved | Day Out Weather | <span id="currentDate"></span>
+            </section>
+        </footer>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/hamburger.js"></script>
     </body>
 </html>
