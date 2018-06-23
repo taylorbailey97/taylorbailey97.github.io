@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <meta charset="utf-8">
+  <meta name="description" content="weather">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+  <title>Franklin | Weather</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main-5.css">
+  <link rel="stylesheet" href="css/medium-5.css">
+  <link rel="stylesheet" href="css/large-5.css">
+  <link href="dist/hamburgers.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+      <h1><img src="images/logo.png" alt="logo">Day Out Weather | Franklin</h1>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        	    <button>&#9776</button>
+          </a>
+      <nav>
+      <div class="navContainer">
+          <ul id="btn" class="topnav">
+              <li><a class="navFlex-item" href="index.html">Home</a></li>
+              <li><a class="navFlex-item" href="franklin.html">Franklin</a></li>
+              <li><a class="navFlex-item" href="#">Greenville</a></li>
+              <li><a class="navFlex-item" href="#">Springfield</a></li>
+              <li><a class="navFlex-item" href="storm.html">Storm Center</a></li>
+              <li><a class="navFlex-item" href="gallery.html">Gallery</a></li>
+          </ul>
+      </div>		
+      </nav>
+  </header>
+
+  <main>
+    <figure class=".rimage">
+        <img src="images/srcsetimage.jpg"
+             srcset="images/srcsetimage400.jpg 600w,
+                     images/srcsetimage600.jpg 1024w,
+                     images/srcsetimage1000.jpg 1600w" alt="responsive photo">
+    </figure>
+    <section class="weather-summary">
+        <h3>Weather Summary</h3>
+        <div class="weather-container">    
+            <div class="highlow">
+                <h4>Day Temp Forecast</h4>
+                <p>High: <span id="high">86</span>&deg;</p>
+                <p>Average: <span id="averageT"></span>&deg;</p>  
+                <p>Low: <span id="low">64</span>&deg;</p>  
+            </div>   
+            <div class="conditions">
+                <h4>Wind and Percip.</h4>
+                <p>Precipitation: 0%</p>  
+                <p>Wind Speed: <span id="speed">80</span> mph SW</p>
+                <p>Wind Chill: <span id="windChill"></span>&deg;</p>  
+            </div>
+            <div class="current">
+                <h4>Current Weather</h4>
+                <p>75&deg;</p>
+                <p>Sunny</p>
+            </div>
+        </div>           
+    </section>
+        
+    <section class="forecast">
+      <h3>Ten Day Forecast</h3>
+      <table>
+        <thead class="tableHead-flex">
+          <tr>
+            <th class="forecast-day">Day 1</th>
+            <th class="forecast-day">Day 2</th>
+            <th class="forecast-day">Day 3</th>
+            <th class="forecast-day">Day 4</th>
+            <th class="forecast-day">Day 5</th>
+            <th class="forecast-day">Day 6</th>
+            <th class="forecast-day">Day 7</th>
+            <th class="forecast-day">Day 8</th>
+            <th class="forecast-day">Day 9</th>
+            <th class="forecast-day">Day 10</th>
+          </tr>
+	</thead>
+        <tbody class="tableBody-flex">  
+          <tr>
+            <td class="forecast-deg">89&deg;F</td>
+            <td class="forecast-deg">87&deg;F</td>
+            <td class="forecast-deg">78&deg;F</td>
+            <td class="forecast-deg">75&deg;F</td>
+            <td class="forecast-deg">72&deg;F</td>
+            <td class="forecast-deg">72&deg;F</td>
+            <td class="forecast-deg">79&deg;F</td>
+            <td class="forecast-deg">83&deg;F</td>
+            <td class="forecast-deg">85&deg;F</td>
+            <td class="forecast-deg">89&deg;F</td>
+          </tr>
+	</tbody>
+      </table>
+    </section>
+    <section>  
+        <h3>Franklin Breaks Record</h3>
+        <article class="article-flex">
+          <div class="town-article">	
+             <img src="images/cold%20weather.jpg">
+             <h4>Franklin has record low tempratures in 2017/2018 winter</h4>
+             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, ultrices sed quam et, imperdiet ornare nisl. Morbi quis posuere turpis...</p>
+          </div>
+          <div class="town-article">	
+             <img src="images/article-2.jpg">
+             <h4>Franklin has record low tempratures in 2017/2018 winter</h4>
+             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, ultrices sed quam et, imperdiet ornare nisl. Morbi quis posuere turpis...</p>
+          </div>
+        </article>		  
+    </section>
+  </main>
+    
+    <footer>
+    <section class="contact">
+      Taylor Bailey
+      206.427.0982
+      123 Main St. Anytown, US 99999
+      Google Map
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Day Out Weather | <span id="currentDate"></span>
+    </section>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/averageTemp.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>

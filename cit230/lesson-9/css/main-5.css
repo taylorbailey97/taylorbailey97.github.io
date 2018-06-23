@@ -70,31 +70,57 @@ h2 a {
     display: block;
 }
 
-/*Body
+/*Main
 ************************/
-    /*towns
-    ************************/
-    #towns {
-        display: grid;
-        grid-template-columns: 1fr;
-        
-    }
-    
-    #towns article {
-        text-align: left;
-        margin: 5px;
-        border: 2px solid black;
-    }
-    #towns h1, #towns h2 {  
-        text-align: center;
-        margin: 0px;
-        font-size: 2.0em;
-    }
+main {}
+main h2 {}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main img {}
+main figure {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
-    #towns p {
-        margin-left: 5px;
-    }
+.weather-summary {
+    text-align: center;
+}
 
+h3 {
+    text-align: center;
+    background: #087F8C;
+    padding: 10px;
+}
+
+.weather-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-item {
+    margin: 30px;
+}
+
+.forecast {
+    display: none;
+}
+
+.article-flex {
+    display: flex;
+    max-width: 400px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.town-article {
+    border: 2.5px solid black;
+    margin: 25px;
+}
+
+#thankyou {
+    text-align: center;
+}
 
 /*Footer
 ************************/
@@ -103,4 +129,3 @@ footer {
     padding: 10px 0;
     color: white;
 }
-
