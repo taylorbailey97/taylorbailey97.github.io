@@ -1,0 +1,117 @@
+
+header, nav, main, footer { 
+  max-width: 600px; 
+  margin: 0 auto;
+  text-align: center;
+}
+
+body {
+    margin: 0;
+    max-width: 100%;
+}
+
+/*Header
+************************/
+header {
+    background: #28536B;
+    color: white;
+}
+header h1 {
+    margin: 0 auto;
+}
+header img {
+    width: 40px;
+    height: 40px;
+}
+header .subheading {}
+
+button {}
+/*Navigation
+************************/
+nav {
+    background: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+}
+nav ul li {
+    display: block;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+    padding: 15px;
+    color: white;
+}
+nav ul li.active a {}
+nav ul li a:hover {
+    background: darkgreen;
+}
+
+h2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    display: none;
+}
+
+.responsive {
+    display: block;
+}
+
+/*Body
+************************/
+    /*towns
+    ************************/
+    #towns {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    
+    #towns article {
+        text-align: left;
+        margin: 5px;
+        border: 2px solid black;
+    }
+    #towns h1, #towns h2 {  
+        text-align: center;
+        margin: 0px;
+        font-size: 2.0em;
+    }
+
+    #towns p {
+        margin-left: 5px;
+    }
+
+
+/*Footer
+************************/
+footer {
+    background: #333;
+    color: white;
+    margin: 0 auto;
+}
+
+footer a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    color: white;
+}
+
+footer a:hover {
+    background: darkgreen;
+}
+

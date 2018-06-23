@@ -1,0 +1,70 @@
+@media only screen and (min-width: 600px) {
+    header, nav, main, footer { 
+        max-width: 900px; 
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    
+    .container {
+        /*display: grid;*/
+        grid-template-columns: 1fr 1fr;
+        /*grid-row-gap: 20px;
+        justify-items: center;*/
+    }
+    
+    /*Header
+    **********************/
+    header img {
+        float: none;
+        width: 80px;
+        height: 80px;
+    }
+    
+    header h1 {
+        margin: 0;
+        font-size: 40px;
+    }
+    
+    header button { display:none; }
+    
+    /*Navigation
+    **********************/
+    nav {
+        background: #333;
+    }
+    
+    nav ul {}
+    
+    nav li {
+        list-style: none;
+        margin: 0 auto;
+    }
+    
+    nav li a {
+        font-size: 20px;
+        padding: 20px;
+    }
+    
+    nav a:hover {
+        background: darkgreen;
+    }
+    
+    
+    /*Body
+    **********************/
+    #towns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    
+    }
+    .grid-item img{
+        max-width: 100%;
+        max-height: auto;
+    }
+    
+    
+    #btn, #btn li {
+        display: inline-block;
+    }
+}

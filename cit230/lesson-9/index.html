@@ -1,7 +1,50 @@
-<!doctype html> 
+<!DOCTYPE html>
 <html>
-   <body>
-       <a href="heroes.html">Heroes</a>
-   </body>
-    
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="weather">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to your weather</title>
+        <link rel="stylesheet" href="css/home-s.css">
+        <link rel="stylesheet" href="css/home-m.css">
+        <link href="https://fonts.googleapis.com/css?family=Skranji" rel="stylesheet">
+    </head>
+    <body>
+    <header>
+      <h1><img src="images/logo.png" alt="logo">Day Out Weather | Home</h1>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        	    <button>&#9776</button>
+          </a>
+      <nav>
+      <div class="navContainer">
+          <ul id="btn" class="topnav">
+              <li><a class="navFlex-item" href="">Home</a></li>
+              <li><a class="navFlex-item" href="#">Franklin</a></li>
+              <li><a class="navFlex-item" href="#">Geenville</a></li>
+              <li><a class="navFlex-item" href="#">Springfield</a></li>
+              <li><a class="navFlex-item" href="#">Storm Center</a></li>
+              <li><a class="navFlex-item" href="gallery.html">Gallery</a></li>
+          </ul>
+      </div>		
+      </nav>
+    </header>
+    <main>
+        <section id="towns">
+            
+        </section>
+    </main>
+    <footer>
+        <section class="contact">
+          Taylor Bailey
+          206.427.0982
+          123 Main St. Anytown, US 99999
+          Google Map
+        </section>
+        <section class="footer-bar">&copy;2018 | All Rights Reserved | Day Out Weather |             <span id="currentDate"></span>
+        </section>
+    </footer>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/script.js"></script>  
+    </body>
 </html>
