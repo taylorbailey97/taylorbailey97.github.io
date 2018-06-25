@@ -49,18 +49,60 @@
             </div>   
             <div class="conditions">
                 <h4>Wind and Percip.</h4>
-                <p>Precipitation: 0%</p>  
-                <p>Wind Speed: <span id="speed">80</span> mph SW</p>
+                <p>Precipitation: 15%</p>  
+                <p>Wind Speed: <span id="speed">80</span> mph</p>
                 <p>Wind Chill: <span id="windChill"></span>&deg;</p>  
             </div>
             <div class="current">
                 <h4>Current Weather</h4>
-                <p>75&deg;</p>
-                <p>Sunny</p>
+                <p><span id="temp">75</span>&deg;</p>
+                <p><span id="condition">Sunny</span></p>
             </div>
         </div>           
     </section>
-        
+    
+    <section class="forecast">
+      <h3>5 Day Forecast</h3>
+      <table>
+        <thead class="tableHead-flex">
+          <tr>
+            <th>Hours</th>
+            <th class="forecast-day" id="d1">Day 1</th>
+            <th class="forecast-day" id="d2">Day 2</th>
+            <th class="forecast-day" id="d3">Day 3</th>
+            <th class="forecast-day" id="d4">Day 4</th>
+            <th class="forecast-day" id="d5">Day 5</th>
+          </tr>
+	</thead>
+        <tbody>  
+          <tr class="tableBody-flex">
+              <td><b>Hour 1</b></td>
+            <td class="forecast-deg" id="d1h1">89&deg;F</td>
+            <td class="forecast-deg" id="d2h1">87&deg;F</td>
+            <td class="forecast-deg" id="d3h1">78&deg;F</td>
+            <td class="forecast-deg" id="d4h1">75&deg;F</td>
+            <td class="forecast-deg" id="d5h1">72&deg;F</td>
+          </tr>
+          <tr class="tableBody-flex">
+              <td><b>Hour 2</b></td>
+            <td class="forecast-deg" id="d1h2">89&deg;F</td>
+            <td class="forecast-deg" id="d2h2">87&deg;F</td>
+            <td class="forecast-deg" id="d3h2">78&deg;F</td>
+            <td class="forecast-deg" id="d4h2">75&deg;F</td>
+            <td class="forecast-deg" id="d5h2">72&deg;F</td>
+          </tr>
+          <tr class="tableBody-flex">
+              <td><b>Hour 3</b></td>
+            <td class="forecast-deg" id="d1h3">89&deg;F</td>
+            <td class="forecast-deg" id="d2h3">87&deg;F</td>
+            <td class="forecast-deg" id="d3h3">78&deg;F</td>
+            <td class="forecast-deg" id="d4h3">75&deg;F</td>
+            <td class="forecast-deg" id="d5h3">72&deg;F</td>
+          </tr>
+	</tbody>
+      </table>
+    </section>
+                    
     <section class="forecast">
       <h3>Ten Day Forecast</h3>
       <table>
@@ -125,5 +167,7 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/averageTemp.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/wu-weather.js"></script>
+    <!--<script src="scripts/5-day.js"></script>-->
 </body>
 </html>
