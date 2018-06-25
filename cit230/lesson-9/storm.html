@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="weather">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Storm Center</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main-5.css">
+        <link rel="stylesheet" href="css/medium-5.css">
+        <link rel="stylesheet" href="css/large-5.css">
+    </head>
+    <body>
+      <header>
+      <h1><img src="images/logo.png" alt="logo">Day Out Weather | Storm Center</h1>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"><button>&#9776;</button>
+          </a>
+      <nav>
+       <div>
+        <ul id="btn" class="topnav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="franklin.html">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="storm.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+        </div>		
+      </nav>
+      </header>
+        <main>
+           <form action="thankyoupage.html" method="get">
+           <div class="form-item">
+                <label for="fullname">Full name: </label>
+                <input type="text" id="fullname" name="fullname" required pattern="[A-za-z]{5,1000}" title="minimum of 5 characters" placeholder="John smith">   
+           </div>
+           <div class="form-item">
+               <label for="email">Email: </label>
+               <input type="email" id="email" name="email" placeholder="name@domain.com">
+           </div>
+           <div class="form-item">
+               <label for="phone">Phone Number: </label>
+               <input type="tel" id="phone" name="phone" required>
+           </div>
+            <div class="form-item">
+                <label for="zip">Zip Code: </label>
+                <input type="text" id="zip" name="zip" required pattern="[0-9]{5,5}">
+            </div>
+            <div class="form-item">
+                <label for="stormdate">Storm Date: </label>
+                <input type="date" id="stormdate" name="stormdate">
+            </div>
+            <div class="form-item">
+                <label for="stormtype">Storm Type: </label>
+                <select id="stormtype">
+                <!--<datalist id="typelist">-->
+                    <option value="0">Select Storm type</option>
+                    <option value="1">Flash Flood</option>
+                    <option value="2">Hail</option>
+                    <option value="3">Hurricane</option>
+                    <option value="4">Thunderstorm</option>
+                    <option value="5">Tornado</option>
+                <!--</datalist>-->
+                </select>
+            </div>
+            <div class="form-item">
+                <label for="severity">Storm Severity: </label>
+                <input type="range" id="severity" value="5" min="1" max="10" step="1" name="severity" oninput="rating(this.value)" onchange="rating(this.value)">
+            </div>
+            <div class="form-item">
+                <label for="area">Storm Region: </label>
+                <select id="area">
+                    <option value="0">Select a region</option>
+                    <option value="1">Franklin</option>
+                    <option value="2">Springville</option>
+                    <option value="3">Greenville</option>
+                </select>
+            </div>
+            <div class="form-item">
+                Are you in danger?<br>
+                <input type="radio" name="danger" checked>Yes<br>
+                <input type="radio" name="danger">No<br>
+                <input type="radio" name="danger">Maybe<br>
+            </div>
+            <div class="form-item">
+                <label for="comments">Any additional comments?</label>
+                <input type="textarea" id="comments" rows="20" cols="50">
+            </div>
+                <input type="submit" value="Submit" class="submit form-item">
+            </form>
+        </main>
+        <footer>
+            <section class="contact">
+              Taylor Bailey
+              206.427.0982
+              123 Main St. Anytown, US 99999
+              Google Map
+            </section>
+            <section class="footer-bar">&copy;2018 | All Rights Reserved | Day Out Weather | <span id="currentDate"></span>
+            </section>
+        </footer>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>

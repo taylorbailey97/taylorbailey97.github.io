@@ -1,22 +1,40 @@
+<<<<<<< HEAD
 body {
+=======
+* { box-sizing: border-box;}
+
+/* Content
+************************/
+
+body {
+    margin: 0;
+>>>>>>> ecb788b5d7411900512f4b405561b06b8ec8ef6a
     max-width: 100%;
 }
 
 header, main, footer {
+<<<<<<< HEAD
     /*max-width: 100%;*/
+=======
+>>>>>>> ecb788b5d7411900512f4b405561b06b8ec8ef6a
     margin: 0 auto;
     text-align: center;
 }
 
 header {
     background: #28536B;
+<<<<<<< HEAD
     text-align: center;
     margin: 
+=======
+    margin-bottom: 5px;
+>>>>>>> ecb788b5d7411900512f4b405561b06b8ec8ef6a
 }
 
 header img {
-    width: 40px;
-    height: 40px;
+    float: left;
+    width: 80px;
+    height: 80px;
 }
 
 header a {
@@ -27,26 +45,51 @@ header a {
 
 header h1 {
     margin: 0;
+    font-size: 60px;
 }
 
-nav ul {
+
+/* Nav
+************************/
+nav {
     background: #333;
 }
 
+nav ul {}
+
 nav li {
     list-style: none;
+<<<<<<< HEAD
     margin: 20px;
     display: block;
+=======
+    margin: 40px;
+    display: block;
+    overflow: hidden;
+>>>>>>> ecb788b5d7411900512f4b405561b06b8ec8ef6a
 }
 
 nav a {
-    padding: 20px; 
+    font-size: 40px;
+    padding: 80px;
 }
 
 nav a:hover {
     background: darkgreen;
 }
 
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    display: none;
+}
+
+.responsive {
+    display: contents;
+}
+
+/* Main
+************************/
 
 .container {
     display: grid;
@@ -56,8 +99,31 @@ nav a:hover {
 }
 
 .grid-item {
+<<<<<<< HEAD
     max-width: 600px;
     width: 100%;
     max-height: 600px;
     height: auto;
+=======
+    border: 2px solid black;
+    background: #fffff2;
+}
+
+.grid-item img{
+    max-width: 100%;
+    max-height: auto;
+}
+
+.grid-item p {
+    max-width: 500px;
+}
+
+/*Footer
+************************/
+footer {
+    margin-top: 20px;
+    background: #28536B;
+    padding: 20px;
+    color: white;
+>>>>>>> ecb788b5d7411900512f4b405561b06b8ec8ef6a
 }
