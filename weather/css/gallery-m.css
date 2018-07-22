@@ -1,0 +1,30 @@
+@media only screen and (min-width: 600px) {
+    /*Header
+    **********************/
+    header,
+    nav,
+    main,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 0;
+    }
+
+    .topnav {
+        display: contents;
+    }
+
+    button {
+        display: none;
+    }
+}

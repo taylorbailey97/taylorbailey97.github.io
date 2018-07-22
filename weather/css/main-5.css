@@ -1,0 +1,65 @@
+
+header, nav, main, footer { 
+  max-width: 600px; 
+  margin: 0 auto;
+  text-align: center;
+}
+
+body {
+    margin: 0;
+    max-width: 100%;
+}
+
+
+/*Main
+************************/
+main {}
+main h2 {}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main img {}
+main figure {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.weather-summary {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    background: #087F8C;
+    padding: 10px;
+}
+
+.weather-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-item {
+    margin: 30px;
+}
+
+.forecast {
+    display: none;
+}
+
+.article-flex {
+    display: flex;
+    max-width: 400px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.town-article {
+    border: 2.5px solid black;
+    margin: 25px;
+}
+
+#thankyou {
+    text-align: center;
+}
+

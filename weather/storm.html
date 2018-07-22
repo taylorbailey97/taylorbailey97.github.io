@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="weather">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Storm Center</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/main-5.css">
+        <link rel="stylesheet" href="css/medium-5.css">
+        <link rel="stylesheet" href="css/large-5.css">
+    </head>
+    <body>
+      <header w3-include-html="header.html">
+      <nav w3-include-html="nav.html">
+      </nav>
+      </header>
+        <main>
+           <form action="thankyoupage.html" method="get">
+           <div class="form-item">
+                <label for="fullname">Full name: </label>
+                <input type="text" id="fullname" name="fullname" required pattern="[A-za-z]{5,1000}" title="minimum of 5 characters" placeholder="John smith">   
+           </div>
+           <div class="form-item">
+               <label for="email">Email: </label>
+               <input type="email" id="email" name="email" placeholder="name@domain.com">
+           </div>
+           <div class="form-item">
+               <label for="phone">Phone Number: </label>
+               <input type="tel" id="phone" name="phone" required>
+           </div>
+            <div class="form-item">
+                <label for="zip">Zip Code: </label>
+                <input type="text" id="zip" name="zip" required pattern="[0-9]{5,5}">
+            </div>
+            <div class="form-item">
+                <label for="stormdate">Storm Date: </label>
+                <input type="date" id="stormdate" name="stormdate">
+            </div>
+            <div class="form-item">
+                <label for="stormtype">Storm Type: </label>
+                <select id="stormtype">
+                <!--<datalist id="typelist">-->
+                    <option value="0">Select Storm type</option>
+                    <option value="1">Flash Flood</option>
+                    <option value="2">Hail</option>
+                    <option value="3">Hurricane</option>
+                    <option value="4">Thunderstorm</option>
+                    <option value="5">Tornado</option>
+                <!--</datalist>-->
+                </select>
+            </div>
+            <div class="form-item">
+                <label for="severity">Storm Severity: </label>
+                <input type="range" id="severity" value="5" min="1" max="10" step="1" name="severity" oninput="rating(this.value)" onchange="rating(this.value)">
+            </div>
+            <div class="form-item">
+                <label for="area">Storm Region: </label>
+                <select id="area">
+                    <option value="0">Select a region</option>
+                    <option value="1">Franklin</option>
+                    <option value="2">Springville</option>
+                    <option value="3">Greenville</option>
+                </select>
+            </div>
+            <div class="form-item">
+                Are you in danger?<br>
+                <input type="radio" name="danger" checked>Yes<br>
+                <input type="radio" name="danger">No<br>
+                <input type="radio" name="danger">Maybe<br>
+            </div>
+            <div class="form-item">
+                <label for="comments">Any additional comments?</label>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            </div>
+                <input type="submit" value="Submit" class="submit form-item">
+            </form>
+        </main>
+        <footer w3-include-html="footer.html">
+        </footer>
+        <script src="scripts/include.js"></script>
+        <script src="scripts/wayfinder.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/modularize.js"></script>
+    </body>
+</html>

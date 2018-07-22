@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="weather">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Springfield | Weather</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main-5.css">
+    <link rel="stylesheet" href="css/medium-5.css">
+    <link rel="stylesheet" href="css/large-5.css">
+</head>
+
+<body>
+    <header w3-include-html="header.html">
+        <nav w3-include-html="nav.html">
+
+        </nav>
+    </header>
+
+    <main>
+        <h3>Springfield</h3>
+        <figure class=".rimage">
+            <img src="images/srcsetimage.jpg" srcset="images/srcsetimage400.jpg 600w,
+                            images/srcsetimage600.jpg 1024w,
+                            images/srcsetimage1000.jpg 1600w" sizes=" 400px,
+                            600px,
+                            1000px" alt="responsive photo">
+        </figure>
+        <section class="weather-summary">
+            <h3>Weather Summary</h3>
+            <div class="weather-container">
+                <div class="highlow">
+                    <h4>Day Temp Forecast</h4>
+                    <p>High: <span id="high">86</span>&deg;</p>
+                    <p>Average: <span id="averageT"></span>&deg;</p>
+                    <p>Low: <span id="low">64</span>&deg;</p>
+                </div>
+                <div class="conditions">
+                    <h4>Wind and Percip.</h4>
+                    <p>Precipitation: 15%</p>
+                    <p>Wind Speed: <span id="speed">80</span> mph</p>
+                    <p>Wind Chill: <span id="windChill"></span>&deg;</p>
+                </div>
+                <div class="current">
+                    <h4>Current Weather</h4>
+                    <p><span id="temp">75</span>&deg;</p>
+                    <p><span id="condition">Sunny</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="forecast">
+            <h3>Ten Day Forecast</h3>
+            <table>
+                <thead class="tableHead-flex">
+                    <tr>
+                        <th class="forecast-day">Day 1</th>
+                        <th class="forecast-day">Day 2</th>
+                        <th class="forecast-day">Day 3</th>
+                        <th class="forecast-day">Day 4</th>
+                        <th class="forecast-day">Day 5</th>
+                        <th class="forecast-day">Day 6</th>
+                        <th class="forecast-day">Day 7</th>
+                        <th class="forecast-day">Day 8</th>
+                        <th class="forecast-day">Day 9</th>
+                        <th class="forecast-day">Day 10</th>
+                    </tr>
+                </thead>
+                <tbody class="tableBody-flex">
+                    <tr>
+                        <td class="forecast-deg">89&deg;F</td>
+                        <td class="forecast-deg">87&deg;F</td>
+                        <td class="forecast-deg">78&deg;F</td>
+                        <td class="forecast-deg">75&deg;F</td>
+                        <td class="forecast-deg">72&deg;F</td>
+                        <td class="forecast-deg">72&deg;F</td>
+                        <td class="forecast-deg">79&deg;F</td>
+                        <td class="forecast-deg">83&deg;F</td>
+                        <td class="forecast-deg">85&deg;F</td>
+                        <td class="forecast-deg">89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h3>Springfield Breaks Record</h3>
+            <article class="article-flex">
+                <div class="town-article">
+                    <img src="images/cold%20weather.jpg" alt="article 1">
+                    <h4>Springfield has record low tempratures in 2017/2018 winter</h4>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, ultrices sed quam et, imperdiet ornare nisl. Morbi quis posuere turpis...</p>
+                </div>
+                <div class="town-article">
+                    <img src="images/article-2.jpg" alt="article 2">
+                    <h4>Springfield has record low tempratures in 2017/2018 winter</h4>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, ultrices sed quam et, imperdiet ornare nisl. Morbi quis posuere turpis...</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer w3-include-html="footer.html"></footer>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/modularize.js"></script>
+    <script src="scripts/wayfinder.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/averageTemp.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather-data/sf-weather.js"></script>
+</body>
+
+</html>

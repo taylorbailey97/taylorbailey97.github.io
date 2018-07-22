@@ -1,0 +1,79 @@
+@media only screen and (min-width: 600px) {
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+    nav ul li {
+        display: inline-block;
+        margin: 0;
+    }
+    
+    
+    button {
+        display: none;
+    }
+    
+    .forecast {
+        display: contents;
+    }  /* show the 10-day forecast with the medium view and up */
+    
+    table {
+        margin: 0 auto;
+    }
+    
+    .forecast h3 {
+        background: #087F8C;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .tableHead-flex {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .tableBody-flex {
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-around;
+        justify-content: center;
+    }
+    
+    .forecast-day {
+        padding: 20px;
+        
+    }
+    
+    .forecast-deg {
+        padding: 0 25px;
+    }
+    
+    .form-item {
+        margin-left: 50px;
+    }
+    
+    
+    header, nav, main, footer { 
+        max-width: 900px; 
+    }
+    
+    main {
+        text-align: left;
+    }
+    
+    .article-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 200px;
+    justify-content: space-around;
+    margin: 0 auto;
+    }
+    
+    .town-article {
+        border: 2.5px solid black;
+        margin: 25px;
+    }
+
+    .topnav {
+        display: contents;
+    }
+
+  }

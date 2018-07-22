@@ -1,0 +1,34 @@
+header, nav, main, footer { 
+  max-width: 600px; 
+  margin: 0 auto;
+  text-align: center;
+}
+
+body {
+    margin: 0;
+    max-width: 100%;
+}
+
+
+/* Main
+************************/
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+}
+
+.grid-item {
+    border: 2px solid black;
+    background: #fffff2;
+}
+
+.grid-item img{
+    max-width: 100%;
+    /*max-height: auto;*/
+}
+
+.grid-item p {
+    max-width: 500px;
+}
