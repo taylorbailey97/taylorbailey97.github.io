@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+
+.nav {
+    display: none;
+}
+
+
+
+header {
+    margin: 0;
+    padding: 0;
+    background: #7D4427;
+    color: white;
+    text-align: center;
+}
+
+header h1{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 1.2em;
+    display: inline-block;
+}
+
+
+
+
+

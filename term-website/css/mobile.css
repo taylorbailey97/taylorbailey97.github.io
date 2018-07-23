@@ -1,0 +1,78 @@
+@media only screen and (max-width: 600px) {
+    /* Header
+    *************************/
+    .container {
+        display: inline-block;
+        cursor: pointer;
+        float: right;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 30px;
+        height: 4px;
+        background-color: #333;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+
+    /* Rotate first bar */
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-6px, 2px);
+        transform: rotate(-45deg) translate(-12px, 5px);
+    }
+
+    /* Fade out the second bar */
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    /* Rotate last bar */
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-9px, -2px);
+        transform: rotate(45deg) translate(-7px, -1px);
+    }
+    
+    .show {
+        display: block;
+        text-align: center;
+        margin: 5px auto;
+        background: #464A44;
+    }
+    .show ul {
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    .show li {
+        padding: 10px 0;
+        font-size: 1.2em;
+    }
+    
+    .show li:hover {
+        background: #486B00;
+    }
+    
+    header img {
+    width: 30px;
+    }
+    /*Main
+    *************************/
+    main img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
