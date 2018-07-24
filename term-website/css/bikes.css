@@ -1,0 +1,36 @@
+article {
+    max-width: 600px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 2px #2e4600 solid;
+}
+
+article h3 {
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(72, 107, 0, .6);
+    text-align: left;
+}
+
+.product-image img {
+}
+
+.product-info {
+    background-color: rgba(72, 107, 0, .6);
+}
+
+h4,
+p {
+    margin: 0;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}

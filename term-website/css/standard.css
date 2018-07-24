@@ -1,12 +1,21 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
     margin: 0;
+    color: white;
 }
 
 .nav {
     display: none;
 }
 
-
+nav li i {
+    margin-right: 10px;
+}
 
 header {
     margin: 0;
@@ -22,6 +31,50 @@ header h1{
     display: inline-block;
 }
 
+header a  {
+    text-decoration: none;
+    color: white;
+}
+
+h3 {
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(125, 68, 39, .8);
+    font-size: 32px;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    background: #7D4427;
+    color: white;
+    text-align: center;
+}
+
+footer h4 {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+}
+
+footer li {
+    display: inline-block;
+    margin: 0px 5px;
+    padding: 10px;
+}
+
+footer i {
+    margin-right: 5px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
 
 
 

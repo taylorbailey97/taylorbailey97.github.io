@@ -1,0 +1,26 @@
+h3 {
+}
+
+article h4 {
+    text-align: center;
+    background: rgba(0, 0, 0, .6);
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 1.5em;
+}
+
+article img {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+article p {
+    margin-top: 0;
+    color: black;
+}
+
+article a {
+    color: red;
+    font-size: 1.1em;
+    text-decoration: none;
+}

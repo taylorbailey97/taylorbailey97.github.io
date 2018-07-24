@@ -1,6 +1,58 @@
-.lander {
-    background-image: linear-gradient( 
-        rgba(0, 0, 0, .5),
-        rgba(0, 0, 0, .5)),
-        url(images/lander-page%20image.jpg)
+
+.overlay {
+    position: relative;
 }
+
+.middle {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay .image {
+  opacity: 1;
+}
+
+.text {
+  background-color: rgba(0, 0, 0, .6);
+  color: white;
+  padding: 10px 5px;
+}
+
+article {
+    margin-top: 10px;
+    color: black;
+    text-align: center;
+}
+
+article h4 {
+    background-color: rgba(0, 0, 0, .3);
+    max-width: 250px;
+    margin: auto;
+    padding: 15px 0;
+    font-size: 1.5em;
+}
+
+article img {
+    display: block;
+    max-height: 150px;
+    width: 250px;
+    height: auto;
+    margin: auto;
+}
+
+article div {
+    border: 2px black solid;
+    width: 250px;
+    margin: auto;
+}
+
+article h5 {
+    font-size: 1.5em;
+}
+
+
+
