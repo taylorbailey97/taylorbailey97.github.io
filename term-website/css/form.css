@@ -1,0 +1,16 @@
+.form-item {
+    display: block;
+    margin: 10px;
+}
+
+#submit {
+    position: relative;
+    background-color: limegreen;
+    font-size: 1.2em;
+    left: 70%;
+    border-radius: 20%;
+    margin-bottom: 10px;
+}
+
+
+

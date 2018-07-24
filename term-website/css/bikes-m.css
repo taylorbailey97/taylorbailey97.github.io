@@ -1,15 +1,10 @@
 @media only screen and (min-width: 600px){
-    .overlay {
+    article {
         max-width: 900px;
         margin: 0 auto;
     }
     
-    .overlay img {
+    article img {
         width: 900px;
     }
-    
-    article {
-       display: inline-block;
-    }
-    
 }

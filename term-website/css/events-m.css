@@ -1,0 +1,15 @@
+@media only screen and (min-width: 600px){
+    article {
+        max-width: 900px;
+        margin: 10px auto;
+    }
+    article img {
+        max-width: 900px;
+        height: auto;
+        margin: 0 auto;
+    }   
+    
+    article p {
+        font-size: 1.5em;
+    }
+}

@@ -6,11 +6,15 @@ html {
 }
 body {
     margin: 0;
-    color: white;
+    color: black;
 }
 
 .nav {
     display: none;
+}
+
+.nav .active{
+    background: #486B00;
 }
 
 nav li i {

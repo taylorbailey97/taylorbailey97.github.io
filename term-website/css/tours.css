@@ -2,12 +2,14 @@ h3 {
    margin-top: 20px; 
 }
 
-p {
+article p {
     color: black;
 }
 
-button {
+.btn {
     position: relative;
+    border-radius: 10%;
+    width: 70px;
     bottom: 45px;
     left: 75%;
     background-color: red;
@@ -15,7 +17,7 @@ button {
     color: white;
 }
 
-button a {
+.btn a {
     text-decoration: none;
     color: white;
 }
